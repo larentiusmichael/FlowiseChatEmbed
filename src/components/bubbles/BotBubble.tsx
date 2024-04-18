@@ -159,12 +159,13 @@ export const BotBubble = (props: Props) => {
     <div class="flex flex-row justify-start mb-2 items-center host-container" style={{ 'margin-right': '50px' }}>
       {/* Modification until here
     <div class="flex flex-col justify-start mb-2 items-start host-container" style={{ 'margin-right': '50px' }}> */}
-      <Show when={props.showAvatar}>
+      {/* <Show when={props.showAvatar}>
         <Avatar initialAvatarSrc={props.avatarSrc} />
-      </Show>
+      </Show> */}
 
       {/* Modification from here */}
-      <div class="ml-2">
+      <Avatar initialAvatarSrc={props.avatarSrc} />
+      <div>
         {props.message.message && (
           <span
             ref={botMessageEl}
